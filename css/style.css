@@ -594,33 +594,6 @@ About
 =========================== */
 
 
-.hexagon {
-  position: relative;
-  width: 173.21px; 
-  height: 300px;
-  background-color: #ffbf00;
-  margin: 86.60px 0;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 86.60px solid #64C7CC;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 86.60px solid #64C7CC;
-}
 
 .member-photo {
 	box-sizing:border-box;
@@ -1210,12 +1183,16 @@ a.scrollup{
   width: 300px;
   height: 180px;
   background-color: #ffbf00;
-  margin: 90px 0;
-  margin-left:20px;
+  margin: 60px 0;
+  margin-left:-20px;
      font-family: inherit;
 
   -webkit-transition-duration: 2s;
    -webkit-transform: scale(0.5);
+      -moz-transition-duration: 2s;
+   -moz-transform: scale(0.5);
+      -ms-transition-duration: 2s;
+   -ms-transform: scale(0.5);
 
 }
 
@@ -1241,8 +1218,12 @@ a.scrollup{
 
 .hexagon:hover {
 
-  -webkit-transform: scale(0.6);
+-webkit-transform: scale(0.6);
 -webkit-transition-duration: 2s;
+-moz-transform: scale(0.6);
+-moz-transition-duration: 2s;
+-ms-transform: scale(0.6);
+-ms-transition-duration: 2s;
 
 
 }
